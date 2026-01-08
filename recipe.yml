@@ -1,0 +1,11 @@
+name: Varbase AI Base
+description: A base recipe to install core AI modules and apply default Varbase AI configurations including OpenAI integration, image alt text generation, and CKEditor AI assistant.
+type: Varbase AI
+install:
+  - ai
+  - eca
+  - ai_integration_eca
+recipes:
+  - varbase_ai_default
+  - varbase_ai_image_alt
+  - varbase_ai_editor_assistant
