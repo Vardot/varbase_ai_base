@@ -6,6 +6,6 @@ install:
   - eca
   - ai_integration_eca
 recipes:
-  - varbase_ai_default
+  - drupal_cms_ai
   - varbase_ai_image_alt
   - varbase_ai_editor_assistant
