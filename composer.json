@@ -16,7 +16,7 @@
     "drupal/drupal_cms_ai": "~2",
     "drupal/eca": "~3",
     "drupal/ai_integration_eca": "~1",
-    "drupal/varbase_ai_image_alt": "1.0.x-dev",
+    "drupal/varbase_ai_image_alt": "2.0.x-dev",
     "drupal/varbase_ai_editor_assistant": "1.0.x-dev",
     "drupal/varbase_ai_taxonomy_tagging": "1.0.x-dev"
   },
