@@ -9,3 +9,15 @@ recipes:
   - drupal_cms_ai
   - varbase_ai_image_alt
   - varbase_ai_editor_assistant
+input:
+  _form_trigger:
+    data_type: string
+    description: 'Internal trigger to ensure the recipe input form is displayed so sub-recipe inputs are collected.'
+    form:
+      '#type': 'hidden'
+      '#value': '1'
+    default:
+      source: value
+      value: '1'
+config:
+  strict: false
