@@ -22,3 +22,16 @@ input:
       value: '1'
 config:
   strict: false
+  actions:
+    ai_agents.ai_agent.drupal_cms_assistant:
+      simpleConfigUpdate:
+        tools:
+          'ai_agents::ai_agent::canvas_ai_orchestrator': true
+          'ai_agents::ai_agent::canvas_component_agent': true
+          'ai_agents::ai_agent::canvas_metadata_generation_agent': true
+          'ai_agents::ai_agent::canvas_page_builder_agent': true
+          'ai_agents::ai_agent::canvas_template_builder_agent': true
+          'ai_agents::ai_agent::canvas_title_generation_agent': true
+          'ai_agents::ai_agent::content_type_agent_triage': true
+          'ai_agents::ai_agent::field_agent_triage': true
+          'ai_agents::ai_agent::taxonomy_agent_config': true
