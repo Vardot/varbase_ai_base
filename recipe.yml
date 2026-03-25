@@ -9,6 +9,7 @@ recipes:
   - drupal_cms_ai
   - varbase_ai_image_alt
   - varbase_ai_editor_assistant
+  - varbase_ai_taxonomy_tagging
 input:
   _form_trigger:
     data_type: string
