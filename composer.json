@@ -20,5 +20,5 @@
     "drupal/varbase_ai_editor_assistant": "~2.0 || 2.0.x-dev",
     "drupal/varbase_ai_taxonomy_tagging": "~2.0 || 2.0.x-dev"
   },
-  "version": "1.0.0-alpha1"
+  "version": "1.0.x-dev"
 }
