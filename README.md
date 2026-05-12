@@ -29,6 +29,16 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_agents
   ```
 
+- **varbase_ai_context**: Adds AI context configuration to enrich prompts with site-specific context
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_context
+  ```
+
+- **varbase_ai_safety**: Applies AI safety guardrails and content moderation defaults
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_safety
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
