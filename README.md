@@ -2,7 +2,7 @@
 
 # Varbase AI Base
 [![pipeline status](https://git.drupalcode.org/project/varbase_ai_base/badges/1.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_ai_base/-/pipelines)
-[![Varbase AI Base](https://img.shields.io/badge/Varbase%20AI%20Base-1.0.0--beta3-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/varbase_ai_base/-/pipelines?ref=1.0.0-beta3)
+[![Varbase AI Base](https://img.shields.io/badge/Varbase%20AI%20Base-1.0.0--beta4-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/varbase_ai_base/-/pipelines?ref=1.0.0-beta4)
 [![Automated Functional Testing](https://git.drupalcode.org/project/varbase_project/badges/11.0.x/pipeline.svg)](https://git.drupalcode.org/project/varbase_project/-/pipelines)
 
 A base recipe to install core AI modules and apply default Varbase AI configurations.

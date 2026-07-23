@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.0-beta4] - 2026-07-23
 ### Added
 - Add `varbase_ai_figma_base` as an optional recipe to the Varbase AI Base recipe.
 
@@ -28,7 +30,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta3...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta4...1.0.x
+[1.0.0-beta4]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta3...1.0.0-beta4
 [1.0.0-beta3]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta2...1.0.0-beta3
 [1.0.0-beta2]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta1...1.0.0-beta2
 [1.0.0-beta1]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-alpha1...1.0.0-beta1
