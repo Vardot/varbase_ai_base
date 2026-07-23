@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Add `varbase_ai_figma_base` as an optional recipe to the Varbase AI Base recipe.
 
 ## [1.0.0-beta3] - 2026-07-10
 ### Changed

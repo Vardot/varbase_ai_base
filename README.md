@@ -44,6 +44,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_safety
   ```
 
+- **varbase_ai_figma_base**: One-command Figma-to-Canvas setup - installs AI Figma, Varbase AI Figma, Context Control Center and AI Agent Modes, and wires the Figma tools into the Drupal Canvas AI Orchestrator
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_figma_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
