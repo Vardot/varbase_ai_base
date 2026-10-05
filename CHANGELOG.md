@@ -6,9 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.1] - 2026-10-05
 ### Changed
 - Apply the Varbase AI Context and Varbase AI Safety recipes with the Varbase AI Base recipe, Safety last.
 - Update the Included Sub-Recipes list in `README.md` to match `recipes:` and note that Varbase AI Safety needs a default AI chat model.
+- Pin the `drupal/varbase_ai_context` to `~1.0.0`, `drupal/varbase_ai_editor_assistant` to `~2.0.0`, `drupal/varbase_ai_figma_base` to `~1.0.0`, `drupal/varbase_ai_image_alt` to `~2.0.0`, `drupal/varbase_ai_safety` to `~1.0.0`, `drupal/varbase_ai_taxonomy_tagging` to `~2.0.0` dependencies for the release.
+- Update the version badge to `1.0.1` in `README.md`.
 
 ## [1.0.0] - 2026-09-06
 ### Changed
@@ -45,7 +49,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.1...1.0.x
+[1.0.1]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-rc1...1.0.0
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta4...1.0.0-rc1
 [1.0.0-beta4]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta3...1.0.0-beta4
