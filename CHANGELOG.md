@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Apply the Varbase AI Context and Varbase AI Safety recipes with the Varbase AI Base recipe, Safety last.
+- Update the Included Sub-Recipes list in `README.md` to match `recipes:` and note that Varbase AI Safety needs a default AI chat model.
 
 ## [1.0.0] - 2026-09-06
 ### Changed

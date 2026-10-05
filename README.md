@@ -15,33 +15,26 @@ This recipe provides a complete AI setup including:
 
 ## Included Sub-Recipes
 
-This recipe automatically applies the following sub-recipes:
-- **varbase_ai_default**: OpenAI configuration and default provider settings
+This recipe automatically applies the following sub-recipes, in this order:
+- **drupal_cms_ai**: AI providers (amazee.ai, OpenAI, Anthropic), API key setup, AI agents and the AI chatbot
 - **varbase_ai_image_alt**: AI-powered image alt text generation
 - **varbase_ai_editor_assistant**: CKEditor 5 AI assistant integration
+- **varbase_ai_taxonomy_tagging**: Automatically tag referenced taxonomy terms based on content entity's body field
+- **varbase_ai_context**: Context Control Center with starter context items for brand, editorial rules and safety guardrails
+- **varbase_ai_safety**: Prompt safety and PII guardrails, AI Logging (90 day retention) and AI Observability
+
+**Varbase AI Safety needs a default AI chat model.** Without one, applying this recipe
+stops with "The operation type 'chat' does not have a default model". The AI Assistant
+recipe sets one when it can reach amazee.ai or is given an OpenAI or Anthropic key;
+otherwise set up an AI provider and a default chat model first.
 
 ## Optional Recipes Available
 
 The following optional recipes are available and can be applied separately for extended functionality:
 
-- **varbase_ai_taxonomy_tagging**: Automatically tag referenced taxonomy terms based on content entity's body field
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_taxonomy_tagging
-  ```
-
 - **varbase_ai_agents**: AI-powered chatbot for streamlined administration with multiple agent management capabilities
   ```bash
   drush recipe recipes/contrib/varbase_ai_agents
-  ```
-
-- **varbase_ai_context**: Adds AI context configuration to enrich prompts with site-specific context
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_context
-  ```
-
-- **varbase_ai_safety**: Applies AI safety guardrails and content moderation defaults
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_safety
   ```
 
 - **varbase_ai_figma_base**: One-command Figma-to-Canvas setup - installs AI Figma, Varbase AI Figma, Context Control Center and AI Agent Modes, and wires the Figma tools into the Drupal Canvas AI Orchestrator
