@@ -78,6 +78,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_mcp_server_base
   ```
 
+- **varbase_ai_readable_base**: Serves /llms.txt and a Markdown version of content
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_readable_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
