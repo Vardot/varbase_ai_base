@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Listed Varbase AI Chatbot Base among the optional recipes (#3632481).
 - Listed Varbase AI Answers Base (Ask AI) among the optional recipes (#3632482).
 - Apply Varbase AI Content Review Base with the Varbase AI Base recipe, before Varbase AI Safety (#3632483).
+- Listed Varbase AI Content Operations Base among the optional recipes (#3632484).
 
 ## [1.0.1] - 2026-10-05
 ### Changed

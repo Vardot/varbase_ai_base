@@ -68,6 +68,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_answers_base
   ```
 
+- **varbase_ai_content_operations_base**: An editor assistant for broken links, alt text and meta descriptions
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_content_operations_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
