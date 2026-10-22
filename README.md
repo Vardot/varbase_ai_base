@@ -88,6 +88,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_seo
   ```
 
+- **varbase_ai_media_base**: Generate images, SVGs and documents with AI in the Media Library
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_media_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
