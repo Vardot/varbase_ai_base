@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Listed Varbase AI Content Operations Base among the optional recipes (#3632484).
 - Listed Varbase AI MCP Server Base among the optional recipes (#3632485).
 - Listed Varbase AI Readable Base among the optional recipes (#3632486).
+- Listed Varbase AI SEO among the optional recipes (#3632487).
 
 ## [1.0.1] - 2026-10-05
 ### Changed
