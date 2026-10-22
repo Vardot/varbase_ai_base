@@ -42,6 +42,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_figma_base
   ```
 
+- **varbase_ai_search_base**: A vector index of the site's pages for AI search
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_search_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
