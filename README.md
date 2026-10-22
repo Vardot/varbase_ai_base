@@ -57,6 +57,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_vdb_milvus
   ```
 
+- **varbase_ai_chatbot_base**: A visitor chatbot that answers only from the site, with links
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_chatbot_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
