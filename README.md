@@ -47,6 +47,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_search_base
   ```
 
+- **varbase_ai_vdb_mariadb**: MariaDB's native VECTOR type as the vector database for AI Search
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_vdb_mariadb
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0

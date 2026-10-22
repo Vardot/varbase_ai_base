@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Listed Varbase AI Search Base among the optional recipes (#3632478).
+- Listed Varbase AI VDB: MariaDB among the optional recipes (#3632479).
 
 ## [1.0.1] - 2026-10-05
 ### Changed
