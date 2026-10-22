@@ -52,6 +52,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_vdb_mariadb
   ```
 
+- **varbase_ai_vdb_milvus**: Milvus or Zilliz Cloud as the vector database for AI Search
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_vdb_milvus
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
