@@ -73,6 +73,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_content_operations_base
   ```
 
+- **varbase_ai_mcp_server_base**: An MCP server for external assistants, with OAuth 2.1
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_mcp_server_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
