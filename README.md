@@ -62,6 +62,11 @@ The following optional recipes are available and can be applied separately for e
   drush recipe recipes/contrib/varbase_ai_chatbot_base
   ```
 
+- **varbase_ai_answers_base**: A question box that answers from site content, with citations
+  ```bash
+  drush recipe recipes/contrib/varbase_ai_answers_base
+  ```
+
 Add the recipe using composer:
 ```
 composer require drupal/varbase_ai_base:~1.0.0
