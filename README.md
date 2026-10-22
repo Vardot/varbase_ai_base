@@ -21,6 +21,7 @@ This recipe automatically applies the following sub-recipes, in this order:
 - **varbase_ai_editor_assistant**: CKEditor 5 AI assistant integration
 - **varbase_ai_taxonomy_tagging**: Automatically tag referenced taxonomy terms based on content entity's body field
 - **varbase_ai_context**: Context Control Center with starter context items for brand, editorial rules and safety guardrails
+- **varbase_ai_content_review_base**: Scored AI review of any content item for editors
 - **varbase_ai_safety**: Prompt safety and PII guardrails, AI Logging (90 day retention) and AI Observability
 
 **Varbase AI Safety needs a default AI chat model.** Without one, applying this recipe

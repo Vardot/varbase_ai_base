@@ -11,6 +11,7 @@ recipes:
   - varbase_ai_editor_assistant
   - varbase_ai_taxonomy_tagging
   - varbase_ai_context
+  - varbase_ai_content_review_base
   - varbase_ai_safety
 input:
   _form_trigger:
