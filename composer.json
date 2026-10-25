@@ -43,7 +43,8 @@
     "drupal/varbase_ai_mcp_server_base": "1.0.x-dev",
     "drupal/varbase_ai_readable_base": "1.0.x-dev",
     "drupal/varbase_ai_seo": "1.0.x-dev",
-    "drupal/varbase_ai_media_base": "1.0.x-dev"
+    "drupal/varbase_ai_media_base": "1.0.x-dev",
+    "drupal/varbase_ai_default": "2.0.x-dev"
   },
   "version": "1.0.x-dev"
 }
