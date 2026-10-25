@@ -7,95 +7,17 @@
 
 A base recipe to install core AI modules and apply default Varbase AI configurations.
 
-This recipe provides a complete AI setup including:
-- Core AI modules (ai, eca, ai_integration_eca)
-- OpenAI integration with default providers and API key configuration
-- Automatic image alt text generation
-- CKEditor AI Assistant for content editing
+## Documentation
 
-## Included Sub-Recipes
+Read the [Varbase AI Base documentation](https://docs.varbase.vardot.com/developers/understanding-varbase/varbase-ai-recipes/varbase-ai-base) on the Varbase docs site.
 
-This recipe automatically applies the following sub-recipes, in this order:
-- **drupal_cms_ai**: AI providers (amazee.ai, OpenAI, Anthropic), API key setup, AI agents and the AI chatbot
-- **varbase_ai_image_alt**: AI-powered image alt text generation
-- **varbase_ai_editor_assistant**: CKEditor 5 AI assistant integration
-- **varbase_ai_taxonomy_tagging**: Automatically tag referenced taxonomy terms based on content entity's body field
-- **varbase_ai_context**: Context Control Center with starter context items for brand, editorial rules and safety guardrails
-- **varbase_ai_content_review_base**: Scored AI review of any content item for editors
-- **varbase_ai_safety**: Prompt safety and PII guardrails, AI Logging (90 day retention) and AI Observability
+The optional Varbase AI recipes and the order to apply them in are listed on the [Varbase AI Recipes](https://docs.varbase.vardot.com/developers/understanding-varbase/varbase-ai-recipes) page.
 
-**Varbase AI Safety needs a default AI chat model.** Without one, applying this recipe
-stops with "The operation type 'chat' does not have a default model". The AI Assistant
-recipe sets one when it can reach amazee.ai or is given an OpenAI or Anthropic key;
-otherwise set up an AI provider and a default chat model first.
-
-## Optional Recipes Available
-
-The following optional recipes are available and can be applied separately for extended functionality:
-
-- **varbase_ai_agents**: AI-powered chatbot for streamlined administration with multiple agent management capabilities
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_agents
-  ```
-
-- **varbase_ai_figma_base**: One-command Figma-to-Canvas setup - installs AI Figma, Varbase AI Figma, Context Control Center and AI Agent Modes, and wires the Figma tools into the Drupal Canvas AI Orchestrator
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_figma_base
-  ```
-
-- **varbase_ai_search_base**: A vector index of the site's pages for AI search
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_search_base
-  ```
-
-- **varbase_ai_vdb_mariadb**: MariaDB's native VECTOR type as the vector database for AI Search
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_vdb_mariadb
-  ```
-
-- **varbase_ai_vdb_milvus**: Milvus or Zilliz Cloud as the vector database for AI Search
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_vdb_milvus
-  ```
-
-- **varbase_ai_chatbot_base**: A visitor chatbot that answers only from the site, with links
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_chatbot_base
-  ```
-
-- **varbase_ai_answers_base**: A question box that answers from site content, with citations
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_answers_base
-  ```
-
-- **varbase_ai_content_operations_base**: An editor assistant for broken links, alt text and meta descriptions
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_content_operations_base
-  ```
-
-- **varbase_ai_mcp_server_base**: An MCP server for external assistants, with OAuth 2.1
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_mcp_server_base
-  ```
-
-- **varbase_ai_readable_base**: Serves /llms.txt and a Markdown version of content
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_readable_base
-  ```
-
-- **varbase_ai_seo**: AI writes SEO titles and descriptions for posts and pages
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_seo
-  ```
-
-- **varbase_ai_media_base**: Generate images, SVGs and documents with AI in the Media Library
-  ```bash
-  drush recipe recipes/contrib/varbase_ai_media_base
-  ```
+## Installation
 
 Add the recipe using composer:
 ```
-composer require drupal/varbase_ai_base:~1.0.0
+composer require drupal/varbase_ai_base:~1
 ```
 
 Change directory to `/web` or `/docroot`
@@ -111,3 +33,7 @@ Run the Drush recipe command:
 ```
 drush recipe recipes/contrib/varbase_ai_base
 ```
+
+**Varbase AI Safety needs a default AI chat model.** Without one, applying this recipe
+stops with "The operation type 'chat' does not have a default model". Set up an AI provider
+and a default chat model first.
