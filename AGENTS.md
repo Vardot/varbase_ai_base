@@ -22,5 +22,6 @@ Read the project history and context first:
 - Keep commit messages in the Drupal commit-type format:
   `{type}: #{issueID} Summary` (see https://www.drupal.org/node/3586390).
 - Never bump the version or tag a release without explicit maintainer approval.
+- A release bump pins every `drupal/varbase_ai_*` dependency to a released constraint; Back to DEV resets them to the dev branch.
 - This is a `drupal-recipe`; keep configuration in the recipe, not in
   `config/install` or `config/optional`.

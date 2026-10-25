@@ -6,20 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.2] - 2026-10-25
 ### Added
-- Listed Varbase AI Search Base among the optional recipes (#3632478).
-- Listed Varbase AI VDB: MariaDB among the optional recipes (#3632479).
-- Listed Varbase AI VDB: Milvus among the optional recipes (#3632480).
-- Listed Varbase AI Chatbot Base among the optional recipes (#3632481).
-- Listed Varbase AI Answers Base (Ask AI) among the optional recipes (#3632482).
-- Apply Varbase AI Content Review Base with the Varbase AI Base recipe, before Varbase AI Safety (#3632483).
-- Listed Varbase AI Content Operations Base among the optional recipes (#3632484).
-- Listed Varbase AI MCP Server Base among the optional recipes (#3632485).
-- Listed Varbase AI Readable Base among the optional recipes (#3632486).
-- Listed Varbase AI SEO among the optional recipes (#3632487).
-- Listed Varbase AI Media Base among the optional recipes (#3632488).
+- Add Varbase AI Search Base to the optional Varbase AI recipes ([#3632478](https://www.drupal.org/i/3632478)).
+- Add Varbase AI VDB: MariaDB to the optional Varbase AI recipes ([#3632479](https://www.drupal.org/i/3632479)).
+- Add Varbase AI VDB: Milvus to the optional Varbase AI recipes ([#3632480](https://www.drupal.org/i/3632480)).
+- Add Varbase AI Chatbot Base to the optional Varbase AI recipes ([#3632481](https://www.drupal.org/i/3632481)).
+- Add Varbase AI Answers Base (Ask AI) to the optional Varbase AI recipes ([#3632482](https://www.drupal.org/i/3632482)).
+- Apply Varbase AI Content Review Base with the Varbase AI Base recipe ([#3632483](https://www.drupal.org/i/3632483)).
+- Add Varbase AI Content Operations Base to the optional Varbase AI recipes ([#3632484](https://www.drupal.org/i/3632484)).
+- Add Varbase AI MCP Server Base to the optional Varbase AI recipes ([#3632485](https://www.drupal.org/i/3632485)).
+- Add Varbase AI Readable Base to the optional Varbase AI recipes ([#3632486](https://www.drupal.org/i/3632486)).
+- Add Varbase AI SEO to the optional Varbase AI recipes ([#3632487](https://www.drupal.org/i/3632487)).
+- Add Varbase AI Media Base to the optional Varbase AI recipes ([#3632488](https://www.drupal.org/i/3632488)).
 ### Changed
 - Move the documentation to docs.varbase.vardot.com ([#3633016](https://www.drupal.org/i/3633016)).
+- Pin the eleven new Varbase AI recipe dependencies to `~1`, and the `drupal/varbase_ai_context`, `drupal/varbase_ai_editor_assistant`, `drupal/varbase_ai_figma_base`, `drupal/varbase_ai_image_alt`, `drupal/varbase_ai_safety`, `drupal/varbase_ai_taxonomy_tagging` dependencies back to their 1.0.1 pins for the release.
+- Update the version badge to `1.0.2` in `README.md`.
 
 ## [1.0.1] - 2026-10-05
 ### Changed
@@ -63,7 +67,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.1...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.2...1.0.x
+[1.0.2]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.1...1.0.2
 [1.0.1]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-rc1...1.0.0
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-beta4...1.0.0-rc1
