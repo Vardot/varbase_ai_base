@@ -9,9 +9,9 @@ module.exports = {
   default: {
     timeout: 60000,
     requireModule: ['tsx/cjs'],
-    require: ['node_modules/@vardot/varbase-e2e/tests/step-definitions/**/*.js'],
+    require: ['node_modules/@vardot/varbase-e2e/tests/step-definitions/**/*.js', 'tests/step-definitions/**/*.js'],
     paths: ['tests/features/**/*.feature'],
-    tags: process.env.CUCUMBER_TAGS || 'not @wip and not @ai-provider',
+    tags: process.env.CUCUMBER_TAGS || 'not @wip',
     format: ['pretty', 'json:tests/reports/cucumber_report.json'],
     worldParameters: {
       launchUrl: process.env.LAUNCH_URL || 'http://localhost',

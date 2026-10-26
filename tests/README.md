@@ -5,10 +5,11 @@ Varbase 11 site with this recipe applied.
 
 | Feature | Covers |
 | --- | --- |
-| `01-01-ai-base-recipe.feature` | The AI, ECA and AI Integration ECA modules, the Canvas tools of the Drupal CMS Assistant, and one sign of each bundled recipe |
+| `01-01-ai-base-editorial.feature` | A content editor drafts a blog post with the AI Assistant and saves it with Suggest tags at hand; adds an image that passes the safety check; opens the AI review of a post |
 | `01-02-ai-base-access.feature` | Only the webmaster opens the AI settings: the editorial roles and visitors get Access denied |
+| `01-03-ai-base-accessibility.feature` | The blog form with its AI tools gives every field a label and every link a name |
 
-The agents the Drupal CMS Assistant can call are named selectors in `tests/selectors/ai-base-selectors.json`.
+The AI controls are named selectors in `tests/selectors/ai-base-selectors.json`. One custom step, in `tests/step-definitions/files.steps.js`, attaches an upload to a file field by its label.
 
 ## Run it
 
@@ -23,6 +24,9 @@ The site needs the webmaster (`webmaster`) and one user per role, named after th
 
 ## AI provider
 
-CI makes the AI module's test provider (EchoAI) the default with `tests/recipes/varbase_ai_testing_provider`
-before the apply, so no key is needed and the amazee.ai trial that Drupal CMS AI sets up does not become the
-default. The AI behaviour of each bundled recipe is tested in that recipe's own suite.
+The recipe applies Drupal CMS AI first, which sets up an amazee.ai trial as the default provider, so no key is
+needed and every scenario runs on real models. Drupal CMS AI asks before an image goes to the AI service; the
+image scenario answers "Yes (this time)", as an editor would.
+
+The blog form is held to the field label, link name and ARIA role checks rather than the full serious gate: the admin theme's help
+toggles and CKEditor's toolbar menu items fail it, which comes from the theme and the editor, not this recipe.

@@ -1,13 +1,11 @@
 {
   "css": {
-    "canvas orchestrator agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::canvas_ai_orchestrator'])",
-    "canvas component agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::canvas_component_agent'])",
-    "canvas metadata agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::canvas_metadata_generation_agent'])",
-    "canvas page builder agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::canvas_page_builder_agent'])",
-    "canvas template builder agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::canvas_template_builder_agent'])",
-    "canvas title agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::canvas_title_generation_agent'])",
-    "content type agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::content_type_agent_triage'])",
-    "field agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::field_agent_triage'])",
-    "taxonomy agent": ".ai-tools-library-item:has(.ai-tools-library-item__remove[data-tool-id='ai_agents::ai_agent::taxonomy_agent_config'])"
+    "ai assistant button": ".ck-toolbar button[data-cke-tooltip-text='AI Assistant']",
+    "suggest tags button": "button:has-text('Suggest tags'), input[value='Suggest tags']",
+    "generate with ai button": "input.ai-alt-text-generation"
+  },
+  "xpath": {
+    "ai draft": "//*[contains(@class,'ui-dialog')]//*[contains(@class,'ck-editor__editable')][contains(.,'Varbase drafts with AI')]",
+    "allow the image AI this time": "//*[contains(@class,'context-notice')][contains(.,'Transfer image and meta data')]//button[contains(.,'Yes (this time)')]"
   }
 }
