@@ -38,6 +38,13 @@ drush recipe recipes/contrib/varbase_ai_base
 stops with "The operation type 'chat' does not have a default model". Set up an AI provider
 and a default chat model first.
 
+## Gemini AI provider
+
+The [Gemini provider](https://www.drupal.org/project/gemini_provider) (chat, vision, and images with Nano Banana)
+comes with this recipe as a Composer package. It is available but not enabled, and the site's default providers
+are not changed. To use it, enable `gemini_provider`, add a Gemini API key in the Key module
+(`/admin/config/system/keys`) and pick it at `/admin/config/ai/providers/gemini`. Images need a key on a paid tier.
+
 ## ElevenLabs AI provider
 
 The [ElevenLabs provider](https://www.drupal.org/project/elevenlabs) (text to speech) comes with this recipe as

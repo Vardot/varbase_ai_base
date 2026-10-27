@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Require the Gemini AI provider (`drupal/gemini_provider: ^1.1`), available but not enabled
+  ([#3633458](https://www.drupal.org/i/3633458)).
 - Require the ElevenLabs AI provider (`drupal/elevenlabs: ^1.2`), available but not enabled
   ([#3633478](https://www.drupal.org/i/3633478)).
 
