@@ -7,7 +7,7 @@ Feature: Varbase AI Recipe - AI Base - Writing with AI help from draft to save
   Background:
     Given I am a logged in user with the "Content editor" user
 
-  Scenario: Verify a content editor drafts a blog post with AI and saves it with suggested tags
+  Scenario: Verify a content editor drafts a blog post with AI and saves it
     CI has no real RAG or vector database hosting: it uses only what the pipeline has and the free amazee.ai
     trial from Drupal CMS AI (thanks to amazee.ai). A short answer comes back within 10 seconds.
      When I go to "/node/add/blog"
@@ -20,10 +20,15 @@ Feature: Varbase AI Recipe - AI Base - Writing with AI help from draft to save
       And I wait max of 10 seconds
      Then I see visible ai draft
      When I press "Save changes to editor"
-     Then I see visible suggest tags button
-     When I click the "Save" button
+      And I click the "Save" button
      Then I should see "Written with Varbase AI"
       And I should see "Varbase drafts with AI"
+
+  Scenario: Check a content editor gets Suggest tags beside the Tags of a page
+    Varbase AI Taxonomy Tagging puts Suggest tags on the page content type by default.
+     When I go to "/node/add/page"
+     Then I should see "Tags"
+      And I see visible suggest tags button
 
   Scenario: Verify a content editor adds an image that passes the safety check and is saved
      When I go to "/media/add/image"
