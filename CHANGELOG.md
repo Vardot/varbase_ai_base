@@ -6,11 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.3] - 2026-10-27
 ### Added
-- Require the Gemini AI provider (`drupal/gemini_provider: ^1.1`), available but not enabled
-  ([#3633458](https://www.drupal.org/i/3633458)).
+- Require Varbase AI Default `~2`, which applies Varbase AI Base and every Varbase AI recipe in one step ([#3633094](https://www.drupal.org/i/3633094)).
 - Require the ElevenLabs AI provider (`drupal/elevenlabs: ^1.2`), available but not enabled
   ([#3633478](https://www.drupal.org/i/3633478)).
+- Require the Gemini AI provider (`drupal/gemini_provider: ^1.1`), available but not enabled
+  ([#3633458](https://www.drupal.org/i/3633458)).
+- Automated functional acceptance tests for Varbase AI Base, run in CI on a fresh Varbase 11 site ([#3633122](https://www.drupal.org/i/3633122)).
+- Check Suggest tags on the page form, where Varbase AI Taxonomy Tagging puts it ([#3633594](https://www.drupal.org/i/3633594)).
+
+### Changed
+- Pin the Varbase AI recipes to their released lines: `~2.0.0` for Image Alt, Editor Assistant and Taxonomy Tagging, `~1.0.0` for Context, Safety and Figma Base, `~1` for the other Varbase AI recipes, and `~2` for Varbase AI Default.
+- Install the Varbase Starter dev line in CI, which carries the search view fix for Drupal CMS Search 2.2.7.
+- Update the version badge to `1.0.3` in `README.md`.
 
 ## [1.0.2] - 2026-10-25
 ### Added
@@ -72,7 +82,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.2...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.3...1.0.x
+[1.0.3]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.2...1.0.3
 [1.0.2]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.1...1.0.2
 [1.0.1]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.0-rc1...1.0.0
