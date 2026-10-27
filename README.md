@@ -38,6 +38,13 @@ drush recipe recipes/contrib/varbase_ai_base
 stops with "The operation type 'chat' does not have a default model". Set up an AI provider
 and a default chat model first.
 
+## ElevenLabs AI provider
+
+The [ElevenLabs provider](https://www.drupal.org/project/elevenlabs) (text to speech) comes with this recipe as
+a Composer package. It is available but not enabled, and the site's default providers are not changed. To use
+it, enable `elevenlabs`, add an ElevenLabs API key in the Key module (`/admin/config/system/keys`) and pick it at
+`/admin/config/system/eleven-labs-settings`.
+
 ## Automated testing
 
 GitLab CI on [git.drupalcode.org](https://git.drupalcode.org/project/varbase_ai_base) (`.gitlab-ci.yml`) builds
