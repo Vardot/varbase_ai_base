@@ -7,6 +7,8 @@ Feature: Varbase AI Recipe - AI Base - Writing with AI help from draft to save
   Background:
     Given I am a logged in user with the "Content editor" user
 
+  # Asserts on what the model wrote; Echo only repeats the prompt.
+  @live-ai
   Scenario: Verify a content editor drafts a blog post with AI and saves it
     CI has no real RAG or vector database hosting: it uses only what the pipeline has and the free amazee.ai
     trial from Drupal CMS AI (thanks to amazee.ai). A short answer comes back within 10 seconds.
@@ -30,6 +32,9 @@ Feature: Varbase AI Recipe - AI Base - Writing with AI help from draft to save
      Then I should see "Tags"
       And I see visible suggest tags button
 
+  # A real vision model must find this image safe. Echo's reply is not a verdict,
+  # so AI Safety refuses the upload (fails closed) and the alt text field never appears.
+  @live-ai
   Scenario: Verify a content editor adds an image that passes the safety check and is saved
      When I go to "/media/add/image"
       And I fill in "Name" with "Green hills at noon"

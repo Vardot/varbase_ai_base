@@ -28,5 +28,11 @@ The recipe applies Drupal CMS AI first, which sets up an amazee.ai trial as the 
 needed and every scenario runs on real models. Drupal CMS AI asks before an image goes to the AI service; the
 image scenario answers "Yes (this time)", as an editor would.
 
+When amazee.ai cannot be reached, `tests/scripts/ai-provider.sh` sets the AI module's Echo test provider
+instead, prints "amazee.ai unavailable: running with the Echo test provider", exports `AI_PROVIDER=echoai` and
+skips the scenarios tagged `@live-ai`, which need a real model's reply: the AI draft, and the image that passes
+the safety check (on Echo, Varbase AI Safety refuses the upload, failing closed). `AMAZEE_UNREACHABLE=1` forces
+that path. To skip them by hand: `CUCUMBER_TAGS="not @wip and not @live-ai" npm test`.
+
 The blog form is held to the field label, link name and ARIA role checks rather than the full serious gate: the admin theme's help
 toggles and CKEditor's toolbar menu items fail it, which comes from the theme and the editor, not this recipe.
