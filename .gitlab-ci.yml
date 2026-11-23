@@ -144,6 +144,8 @@ validate:yaml-lint:
     - $DRUSH cache:rebuild
     - $DRUSH recipe $_BUILD_DIR/recipes/$RECIPE -y
     - $DRUSH cache:rebuild
+    # On Echo, clear amazee.ai again: applying the recipe re-runs Drupal CMS AI.
+    - if [ "$AI_PROVIDER" = "echoai" ]; then ai_echo_only; fi
   script:
     - chown -R www-data:www-data $_BUILD_DIR
     - service apache2 start
