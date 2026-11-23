@@ -5,6 +5,7 @@ install:
   - ai
   - eca
   - ai_integration_eca
+  - canvas_dev_ai
 recipes:
   - drupal_cms_ai
   - varbase_ai_image_alt
@@ -25,6 +26,10 @@ input:
       value: '1'
 config:
   strict: false
+  # The two agents Canvas Dev AI ships: a recipe installs a module's config
+  # entities only when it imports them.
+  import:
+    canvas_dev_ai: '*'
   actions:
     ai_agents.ai_agent.drupal_cms_assistant:
       simpleConfigUpdate:

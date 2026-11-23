@@ -1,0 +1,9 @@
+# The same defaults canvas_dev_ai_install() sets. A recipe installs modules
+# while config is syncing, and that hook skips syncing installs, so the recipe
+# ships them. Imported after every module is installed, when the agents these
+# IDs name exist.
+main_agent: canvas_agent
+tools:
+  - canvas_component_agent
+  - drupal_canvas_page_agent
+keep_tool_calls_in_history: false

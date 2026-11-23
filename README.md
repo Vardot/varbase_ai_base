@@ -38,6 +38,13 @@ drush recipe recipes/contrib/varbase_ai_base
 stops with "The operation type 'chat' does not have a default model". Set up an AI provider
 and a default chat model first.
 
+## Canvas AI on the selected component
+
+This recipe installs Canvas Dev AI (`canvas_dev_ai`, from Drupal Canvas 1.13). In the Canvas editor, select a
+component and open the AI panel: the component's name shows as a tag in the chat input, with an x to deselect, and
+the prompt applies to that component. Canvas marks this module experimental: it replaces the Canvas AI chat backend
+and UI while installed. Its agent and tools are set at `/admin/config/ai/canvas-ai-agent-selection`.
+
 ## Gemini AI provider
 
 The [Gemini provider](https://www.drupal.org/project/gemini_provider) (chat, vision, and images with Nano Banana)

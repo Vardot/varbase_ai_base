@@ -10,6 +10,12 @@ Feature: Varbase AI Recipe - AI Base - Who can change the AI settings
      Then the response status code should be 200
       And I should see "AI Settings"
 
+  Scenario: Check the webmaster can open the Canvas AI agents and tools
+    Given I am a logged in user with the "Webmaster" user
+     When I go to "/admin/config/ai/canvas-ai-agent-selection"
+     Then the response status code should be 200
+      And I should see "Agents & Tools"
+
   Scenario Outline: Check the "<user>" user cannot open the AI settings
     Given I am a logged in user with the "<user>" user
      When I go to "/admin/config/ai/settings"
