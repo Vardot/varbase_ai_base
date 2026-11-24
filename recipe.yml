@@ -44,3 +44,10 @@ config:
           'ai_agents::ai_agent::content_type_agent_triage': true
           'ai_agents::ai_agent::field_agent_triage': true
           'ai_agents::ai_agent::taxonomy_agent_config': true
+    canvas_ai.settings:
+      simpleConfigUpdate:
+        # Images up to 20 MB in the Canvas AI panel (Canvas default: 2).
+        file_upload_size: 20
+        # Messages passed to the AI as conversation history (Canvas default:
+        # 10). Each turn stores about 3 entries (prompt, progress, answer).
+        chat_history_max_messages: 50
