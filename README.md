@@ -59,6 +59,13 @@ a Composer package. It is available but not enabled, and the site's default prov
 it, enable `elevenlabs`, add an ElevenLabs API key in the Key module (`/admin/config/system/keys`) and pick it at
 `/admin/config/system/eleven-labs-settings`.
 
+## Varbase Canvas AI
+
+[Varbase Canvas AI](https://www.drupal.org/project/varbase_canvas_ai) is installed by this recipe. It lets the
+Drupal Canvas AI agent read a public web page from a URL and rebuild it with the site's own header, footer and
+components, and save an image from a URL for use in a component. Only public addresses are read, and fetched
+text is treated as data, never as instructions.
+
 ## Automated testing
 
 GitLab CI on [git.drupalcode.org](https://git.drupalcode.org/project/varbase_ai_base) (`.gitlab-ci.yml`) builds

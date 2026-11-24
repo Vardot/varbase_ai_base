@@ -6,6 +6,7 @@ install:
   - eca
   - ai_integration_eca
   - canvas_dev_ai
+  - varbase_canvas_ai
 recipes:
   - drupal_cms_ai
   - varbase_ai_image_alt

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Install Canvas Dev AI (`canvas_dev_ai`), with its two agents and its settings, so an editor can select a component in Drupal Canvas, see it as a tag in the AI chat input, and change only that component. Requires `drupal/canvas: ^1.13` ([#3638917](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638917)).
+- Install Varbase Canvas AI, so the Canvas AI agent can build a page from a URL ([#3638919](https://www.drupal.org/i/3638919)).
 
 ## [1.0.5] - 2026-11-15
 ### Changed

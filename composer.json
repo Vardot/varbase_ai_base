@@ -30,6 +30,7 @@
     "drupal/ai_integration_eca": "~1",
     "drupal/gemini_provider": "^1.1",
     "drupal/elevenlabs": "^1.2",
+    "drupal/varbase_canvas_ai": "1.0.x-dev",
     "drupal/varbase_ai_image_alt": "2.0.x-dev",
     "drupal/varbase_ai_editor_assistant": "2.0.x-dev",
     "drupal/varbase_ai_taxonomy_tagging": "2.0.x-dev",
