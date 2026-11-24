@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-11-24
+### Changed
+- Set Canvas AI defaults: 20 MB upload size, so a full-page screenshot fits, and 50 chat history messages, so a longer page-building chat keeps its earlier instructions ([#3638920](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638920)).
+- Update the version badge to `1.0.7` in `README.md`.
+
 ## [1.0.6] - 2026-11-24
 ### Added
 - Install Canvas Dev AI (`canvas_dev_ai`), with its two agents and its settings, so an editor can select a component in Drupal Canvas, see it as a tag in the AI chat input, and change only that component. Requires `drupal/canvas: ^1.13` ([#3638917](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638917)).
@@ -105,7 +110,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.6...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.7...1.0.x
+[1.0.7]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.6...1.0.7
 [1.0.6]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.5...1.0.6
 [1.0.5]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.4...1.0.5
 [1.0.4]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.3...1.0.4
