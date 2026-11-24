@@ -6,9 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.6] - 2026-11-24
 ### Added
 - Install Canvas Dev AI (`canvas_dev_ai`), with its two agents and its settings, so an editor can select a component in Drupal Canvas, see it as a tag in the AI chat input, and change only that component. Requires `drupal/canvas: ^1.13` ([#3638917](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638917)).
-- Install Varbase Canvas AI, so the Canvas AI agent can build a page from a URL ([#3638919](https://www.drupal.org/i/3638919)).
+- Install Varbase Canvas AI, so the Canvas AI agent can build a page from a URL ([#3638919](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638919)).
+
+### Changed
+- Require Varbase Canvas AI `~1.0.0`. With minimum-stability dev and prefer-stable it resolves to 1.0.0-alpha1 today, its first release.
+- Run the functional tests in CI on PHP 8.5 ([#3638915](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638915)).
+- Fall back to the AI module's Echo test provider in CI when amazee.ai is unavailable, and skip the scenarios that need a live AI reply ([#3638916](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638916)).
+- Clear the amazee.ai key in CI when the Echo test provider is used, so the AI settings page opens without waiting on amazee.ai ([#3638921](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638921)).
+- Update the version badge to `1.0.6` in `README.md`.
 
 ## [1.0.5] - 2026-11-15
 ### Changed
@@ -96,7 +105,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.5...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.6...1.0.x
+[1.0.6]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.5...1.0.6
 [1.0.5]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.4...1.0.5
 [1.0.4]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.3...1.0.4
 [1.0.3]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.2...1.0.3
