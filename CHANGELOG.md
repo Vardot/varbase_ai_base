@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 2026-11-25
+### Changed
+- Use caret constraints and allow Drupal 11.4 and later and Drupal 12 in Varbase AI Base recipe ([#3638925](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638925)).
+- Pin the dev cross-dependencies in caret style for the release.
+- Update the version badge to `1.0.8` in `README.md`.
+
 ## [1.0.7] - 2026-11-24
 ### Changed
 - Set Canvas AI defaults: 20 MB upload size, so a full-page screenshot fits, and 50 chat history messages, so a longer page-building chat keeps its earlier instructions ([#3638920](https://git.drupalcode.org/project/varbase_ai_base/-/work_items/3638920)).
@@ -110,7 +116,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase AI Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.7...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.8...1.0.x
+[1.0.8]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.7...1.0.8
 [1.0.7]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.6...1.0.7
 [1.0.6]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.5...1.0.6
 [1.0.5]: https://git.drupalcode.org/project/varbase_ai_base/-/compare/1.0.4...1.0.5
